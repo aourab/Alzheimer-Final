@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futuristic EEG Beta Waves</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+</head>
+<body>
+    <div class="header">
+        <h1>Visualizing EEG Data</h1>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h2>EEG Data Collection Process</h2>
+            <video id="videoPlayer" width="300" height="200" controls autoplay loop>
+                <source src="eeg_head_3.mp4" type="video/mp4">
+                
+            </video>
+            <div class="text-section">
+                <h3>3D preview</h3>
+                <p>To enhance understanding, we present a 3D model made with Blender illustrating the process of collecting EEG data.</p>
+            </div>
+            <div class="text-section">
+                
+                <p>The 3D model depicts a head with connected EEG electrodes, providing a visual representation of the data acquisition process</p>
+            </div>
+        </div>
+        <div class="eeg-container">
+            <canvas id="eegChart" width="800" height="400"></canvas>
+            <div class="bottom-text">
+                <p>Our project demonstrates the potential of EEG and machine learning in the diagnosis of Alzheimer's disease</p>
+            </div>
+        </div>
+      
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
